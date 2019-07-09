@@ -27,7 +27,7 @@ sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
 ```
 
-## Compiled installation installation
+## Normal compiled installation 
 
 Currently tested on X86_64 and ARM platform(s) **only**,  
 cross compile possible.
