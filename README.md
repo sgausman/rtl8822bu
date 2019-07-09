@@ -25,6 +25,7 @@ sudo dkms add -m rtl88x2bu -v ${VER}
 sudo dkms build -m rtl88x2bu -v ${VER}
 sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
+```
 
 ## Compiled installation installation
 
@@ -43,15 +44,15 @@ To Unload driver you may need to disconnect the device
 If the driver fails building consult your distro how to  
 install the kernel sources and build an <u>external</u> module.
 
-**NOTES**  
+## NOTES
 This driver allows use of wpa_supplicant by using the nl80211 driver
 `wpa_supplicant -Dnl80211`
 
 If installing on Rasberry Pi or other "armv71" devices, edit the Makefile and set `CONFIG_PLATFORM_ARM_RPI = y` and `CONFIG_PLATFORM_I386_PC = n`
 
-**STATUS**  
+## STATUS
 Driver works fine (some sort of)  
 Most of the work is done is cleaning the driver and make this mess **readable**   for conversion.
 Updates for wireless-ext/cfg80211  are not accepted.  
   
-**BUGS**  
+## BUGS 
